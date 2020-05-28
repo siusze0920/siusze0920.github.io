@@ -1,0 +1,23 @@
+@import "./variable";
+@import "./general";
+
+.indexContentBlock {
+	height: calc(100vh - 80px - #{$padding});
+	align-content: center;
+	.imageBlock {
+        display: flex;
+		justify-content: center;
+		img {
+			width: 110%;
+		}
+	}
+	.nameBlock {
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		h4 {
+			color: lightgrey;
+		}
+	}
+}

@@ -1,0 +1,44 @@
+@import "./variable";
+@import "./general";
+.contentContainer {
+	.mainTitle {
+		text-align: center;
+	}
+	.contactBlockContainer {
+		margin-top: 50px;
+		.contactBlock {
+			min-height: 20vh;
+			.blockContent {
+				padding-top: 15px;
+				h5 {
+					margin-top: 15px;
+				}
+				.mediaBtnGroup {
+					margin-top: 30px;
+					.mediaBtn {
+						background-color: color(mainWhite);
+						color: color(mainBlack);
+						&:hover {
+							background-color: color(mainBlack);
+							color: color(mainWhite);
+							border: 0.5px solid color(mainWhite);
+						}
+					}
+                }
+                .formContainer{
+                    padding: 15px;
+                    background-color: color(mainWhite);
+                    color: color(mainBlack);
+                    border-radius: 5px;
+                }
+			}
+		}
+		.mediaBlock {
+            border-left: 1px solid color(mainWhite);
+            @include mobile{
+                border:none;
+                margin-top: 15px;
+			}
+		}
+	}
+}

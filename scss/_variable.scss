@@ -1,0 +1,16 @@
+$color: (
+	mainBlack: #101820,
+	mainWhite: #F5F7F6,
+	light-mainWhite: lighten(#F5F7F6, 40%),
+);
+@function color($colorName) {
+	@return map-get($color, $colorName);
+}
+$padding: 15px;
+$borders: 15px;
+$desktop-md: 768px;
+@mixin mobile {
+    @media(max-width: #{$desktop-md}){
+        @content;
+    }
+}

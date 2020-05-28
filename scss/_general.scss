@@ -1,0 +1,23 @@
+body,
+html {
+	height: 100%;
+	width: 100%;
+	overflow-x: hidden;
+}
+body {
+	background-color: color(mainBlack);
+	color: color(mainWhite);
+}
+.topNav {
+	background-color: color(mainWhite);
+	color: black;
+}
+.contentContainer {
+    margin-top: 80px;
+    padding-bottom: $padding;
+	min-height: calc(100vh - 80px - #{$padding});
+}
+
+.paddingZero{
+    padding:0 !important;
+}
